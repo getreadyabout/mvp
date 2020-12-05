@@ -1,0 +1,44 @@
+{
+  "version": 8,
+  "name": "Ready About",
+  "metadata": {
+    "maputnik:license": "https://github.com/maputnik/osm-liberty/blob/gh-pages/LICENSE.md",
+    "maputnik:renderer": "mbgljs",
+    "openmaptiles:version": "3.x"
+  },
+  "sources": {
+    "earth": {
+      "type": "vector",
+      "url": "http://d374yict432ehf.cloudfront.net/capabilities/earth.json"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "layout": {"visibility": "visible"},
+      "paint": {"background-color": "rgba(73, 216, 255, 1)"}
+    },
+    {
+      "id": "land_1",
+      "type": "fill",
+      "layout": {"visibility": "visible"},
+      "source": "earth",
+      "source-layer": "land_1",
+      "paint": {"fill-color": "rgba(235, 89, 52, 1)"},
+      "minzoom": 0,
+      "maxzoom": 7
+    },
+    {
+      "id": "land_2",
+      "type": "fill",
+      "layout": {"visibility": "visible"},
+      "source": "earth",
+      "source-layer": "land_2",
+      "paint": {"fill-color": "rgba(235, 89, 52, 1)"},
+      "minzoom": 8,
+      "maxzoom": 22
+    }
+  ],
+  "id": "readyabout"
+}
