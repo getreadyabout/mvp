@@ -69,7 +69,9 @@
       "source": "openmaptiles",
       "source-layer": "water",
       "type": "fill"
-    }
+    },
+    {"id":"soundings_overview","source":"charts","source-layer":"soundings_overview","type":"circle","layout":{"visibility":"visible"},"paint":{"circle-radius":3,"circle-color":"#783cd7"}
+  }
   ],
   "metadata": {
     "maptiler:copyright": "This style was generated on MapTiler Cloud. Usage outside of MapTiler Cloud requires valid OpenMapTiles Production Package: https://openmaptiles.com/production-package/ -- please contact us.",
@@ -81,6 +83,10 @@
     "openmaptiles": {
       "type": "vector",
       "url": "https://api.maptiler.com/tiles/v3/tiles.json?key=NMB0aKqRgtuv2E0wV1U7"
+    },
+    "charts": {
+      "type": "vector",
+      "url": "https://d374yict432ehf.cloudfront.net/capabilities/charts.json"
     }
   },
   "version": 8,
