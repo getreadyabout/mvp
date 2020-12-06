@@ -1,0 +1,88 @@
+{
+  "bearing": 0,
+  "center": [
+    -98.3371255247925,
+    48.477329240181376
+  ],
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=NMB0aKqRgtuv2E0wV1U7",
+  "id": "9df33813-e05d-4b0a-92e9-8436fff94c26",
+  "layers": [
+    {
+      "id": "background",
+      "paint": {
+        "background-color": "rgba(255, 94, 0, 1)"
+      },
+      "type": "background"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ],
+        [
+          "!=",
+          "intermittent",
+          1
+        ],
+        [
+          "!=",
+          "brunnel",
+          "tunnel"
+        ]
+      ],
+      "id": "water",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "rgba(122, 233, 255, 1)"
+      },
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ],
+        [
+          "==",
+          "intermittent",
+          1
+        ]
+      ],
+      "id": "water_intermittent",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "hsl(205, 56%, 73%)",
+        "fill-opacity": 0.7
+      },
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "type": "fill"
+    }
+  ],
+  "metadata": {
+    "maptiler:copyright": "This style was generated on MapTiler Cloud. Usage outside of MapTiler Cloud requires valid OpenMapTiles Production Package: https://openmaptiles.com/production-package/ -- please contact us.",
+    "openmaptiles:version": "3.x"
+  },
+  "name": "Basic",
+  "pitch": 0,
+  "sources": {
+    "openmaptiles": {
+      "type": "vector",
+      "url": "https://api.maptiler.com/tiles/v3/tiles.json?key=NMB0aKqRgtuv2E0wV1U7"
+    }
+  },
+  "version": 8,
+  "zoom": 3.2397313994612844
+}
